@@ -1,0 +1,221 @@
+/* Import Gilroy Font */
+/* Ensure you have the font files in the /fonts directory */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Gilroy', sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px; /* Adjusted for readability */
+}
+
+/* Burger Menu (Mobile) */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--spring-green);
+    color: var(--white);
+}
+
+.hero h1 {
+    font-size: 120px; /* H1 Titles */
+    line-height: 140px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 40px; /* P1 Paragraph Large */
+    line-height: 50px;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section h2 {
+    color: var(--midnight-blue);
+    margin-bottom: 20px;
+    font-size: 80px; /* H2 Titles */
+    line-height: 90px;
+    font-weight: bold;
+}
+
+.content-section h3 {
+    color: var(--spring-green);
+    margin-top: 30px;
+    font-size: 50px; /* H3 Titles */
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.content-section p,
+.content-section ul {
+    font-size: 25px; /* P2 Paragraph Medium */
+    line-height: 35px;
+    color: var(--secondary-text-color);
+}
+
+.content-section ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.content-section li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 18px; /* P3 Paragraph Small */
+    line-height: 22px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .hero h1 {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .hero p {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .content-section h2 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .content-section h3 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .content-section p,
+    .content-section ul {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: var(--black);
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .hero p {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .content-section h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .content-section h3 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .content-section p,
+    .content-section ul {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
