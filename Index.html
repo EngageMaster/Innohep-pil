@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Innohep® Syringes/Vials - Patient Information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Styling */
+        :root {
+            /* Brand Colors */
+            --spring-green: #8cb811;
+            --midnight-blue: #19475d;
+            --black: #00131d;
+            --white: #ffffff;
+            /* Text Colors */
+            --primary-text-color: var(--black);
+            --secondary-text-color: var(--black-70);
+            /* Background Colors */
+            --background-color: var(--white);
+        }
+
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary-text-color);
+            background-color: var(--background-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--black);
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Burger Menu (Mobile) */
+        .burger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: var(--white);
+            margin: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: var(--spring-green);
+            color: var(--white);
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            line-height: 70px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 25px;
+            line-height: 35px;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content-section h2 {
+            color: var(--midnight-blue);
+            margin-bottom: 20px;
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: bold;
+        }
+
+        .content-section p,
+        .content-section ul {
+            font-size: 18px;
+            line-height: 28px;
+            color: var(--secondary-text-color);
+        }
+
+        .content-section ul {
+            list-style-type: disc;
+            margin-left: 40px;
+        }
+
+        .content-section li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--black);
+            color: var(--white);
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background-color: var(--black);
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+                text-align: center;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+                line-height: 50px;
+            }
+
+            .hero p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            .content-section h2 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+            .content-section p,
+            .content-section ul {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <!-- Placeholder Image -->
+            <img src="https://via.placeholder.com/150" alt="Innohep Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#formulations">Formulations</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#indications">Indications</a></li>
+                <li><a href="#dosage">Dosage</a></li>
+                <li><a href="#special-considerations">Special Considerations</a></li>
+                <li><a href="#adverse-effects">Adverse Effects</a></li>
+                <li><a href="#contraindications">Contraindications</a></li>
+                <li><a href="#interactions">Interactions</a></li>
+                <li><a href="#pregnancy-lactation">Pregnancy & Lactation</a></li>
+                <li><a href="#storage">Storage</a></li>
+                <li><a href="#instructions">Instructions for Injection</a></li>
+            </ul>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Innohep® Syringes/Vials</h1>
+            <p>Anticoagulant Tinzaparin sodium for subcutaneous injection</p>
+        </section>
+
+        <!-- Formulations Section -->
+        <section id="formulations" class="content-section">
+            <h2>Formulations</h2>
+            <p><strong>10 Vials of 2 ml:</strong></p>
+            <ul>
+                <li>Tinzaparin sodium 10,000 IU anti-Xa/ml, preserved with benzyl alcohol (10 mg/ml).</li>
+                <li>Tinzaparin sodium 20,000 IU anti-Xa/ml, preserved with benzyl alcohol (10 mg/ml), stabilized with sodium metabisulphite.</li>
+            </ul>
+            <p><strong>10 Pre-filled syringes with needle safety device:</strong></p>
+            <ul>
+                <li>Volumes of 0.25ml, 0.35ml, or 0.45ml containing Tinzaparin sodium 10,000 IU anti-Xa/ml.</li>
+            </ul>
+            <p><strong>2 Pre-filled syringes with needle safety device:</strong></p>
+            <ul>
+                <li>Volumes of 0.5ml, 0.7ml, or 0.9ml containing Tinzaparin sodium 20,000 IU anti-Xa/ml, stabilized with sodium metabisulphite.</li>
+            </ul>
+        </section>
+
+        <!-- Properties Section -->
+        <section id="properties" class="content-section">
+            <h2>Properties</h2>
+            <p>Tinzaparin sodium is a low molecular weight heparin produced by enzymatic depolymerization of conventional heparin. Its molecular mass ranges between 1,000 and 14,000 daltons, with a peak maximum at approximately 4,500 daltons. It functions as an anti-thrombotic agent. The bioavailability following subcutaneous injection is approximately 90%, with an absorption half-life of 200 minutes and peak plasma activity within 4–6 hours. The elimination half-life is about 80 minutes, and it is primarily eliminated unchanged in urine.</p>
+            <p>The pharmacokinetics/pharmacodynamics are monitored by anti-Xa activity, demonstrating a linear dose-response relationship between plasma activity and the administered dose.</p>
+        </section>
+
+        <!-- Indications Section -->
+        <section id="indications" class="content-section">
+            <h2>Indications</h2>
+            <ul>
+                <li>Treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE).</li>
+                <li>Prevention of postoperative DVT in general and orthopaedic surgery.</li>
+                <li>Prevention of clotting in in-dwelling intravenous lines during extracorporeal circulation and haemodialysis.</li>
+            </ul>
+        </section>
+
+        <!-- Dosage Section -->
+        <section id="dosage" class="content-section">
+            <h2>Dosage</h2>
+            <h3>1. Treatment of DVT and PE:</h3>
+            <p>
+              175 IU anti-Xa/kg body weight subcutaneously once daily.</p>
+
+            <h3>2. Thromboprophylaxis:</h3>
+            <p><strong>Moderate risk (general surgery):</strong> 3,500 IU anti-Xa s.c. 2 hours pre-surgery, continued postoperatively once daily for 7–10 days.</p>
+            <p><strong>High risk (e.g., total hip replacement):</strong> 4,500 IU anti-Xa s.c. 12 hours pre-surgery or 50 IU anti-Xa/kg s.c. 2 hours pre-surgery and then daily until mobilized.</p>
+
+            <h3>3. Haemodialysis:</h3>
+            <p><strong>Short-term (&lt;4 hours):</strong> Bolus dose of 2,000–2,500 IU anti-Xa at the beginning.</p>
+            <p><strong>Long-term (&gt;4 hours):</strong> Bolus dose of 2,500 IU anti-Xa followed by an infusion of 750 IU anti-Xa/hour.</p>
+        </section>
+
+        <!-- Special Considerations Section -->
+        <section id="special-considerations" class="content-section">
+            <h2>Special Considerations</h2>
+            <p><strong>Elderly:</strong> Renal function assessment recommended (e.g., Cockcroft-Gault formula). No dose reduction needed with normal renal function.</p>
+            <p><strong>Renal Impairment:</strong> Caution for severe impairment (creatinine clearance &lt;30 ml/min).</p>
+            <p><strong>Overdose:</strong> An overdose may lead to hemorrhage. The antidote is protamine sulphate (1 mg neutralizes 100 IU anti-Xa of tinzaparin).</p>
+        </section>
+
+        <!-- Adverse Effects Section -->
+        <section id="adverse-effects" class="content-section">
+            <h2>Adverse Effects</h2>
+            <p>Safe when used at recommended doses. Risks include bleeding, priapism, and skin necrosis.</p>
+        </section>
+
+        <!-- Contraindications Section -->
+        <section id="contraindications" class="content-section">
+            <h2>Contraindications</h2>
+            <p>Hypersensitivity, severe uncontrolled hypertension, acute cerebral insults, and septic endocarditis.</p>
+        </section>
+
+        <!-- Interactions Section -->
+        <section id="interactions" class="content-section">
+            <h2>Interactions</h2>
+            <p>Concomitant use with drugs affecting haemostasis may enhance effects.</p>
+        </section>
+
+        <!-- Pregnancy and Lactation Section -->
+        <section id="pregnancy-lactation" class="content-section">
+            <h2>Pregnancy and Lactation</h2>
+            <p>Limited data; use caution, particularly with prosthetic heart valves.</p>
+        </section>
+
+        <!-- Storage Section -->
+        <section id="storage" class="content-section">
+            <h2>Storage</h2>
+            <p>Do not store above 30°C.</p>
+            <p><strong>Shelf life:</strong> Vials – 2 years, Syringes – 3 years.</p>
+        </section>
+
+        <!-- Instructions for Injection Section -->
+        <section id="instructions" class="content-section">
+            <h2>Instructions for Injection</h2>
+            <p>Detailed instructions on preparing, injecting, and disposing of syringes are included.</p>
+            <p><em>Last Revised: October 2015</em></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Innohep. All rights reserved.</p>
+    </footer>
+
+    <!-- Inline JavaScript -->
+    <script>
+        // Mobile Navigation Toggle
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+        });
+    </script>
+</body>
+</html>
