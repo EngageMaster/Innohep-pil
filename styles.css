@@ -1,23 +1,10 @@
-/* Import Gilroy Font */
-/* Ensure you have the font files in the /fonts directory */
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: var(--primary-text-color);
     background-color: var(--background-color);
 }
@@ -56,7 +43,7 @@ header {
 .nav-links a {
     color: var(--white);
     font-weight: bold;
-    font-size: 18px; /* Adjusted for readability */
+    font-size: 18px;
 }
 
 /* Burger Menu (Mobile) */
@@ -81,14 +68,14 @@ header {
 }
 
 .hero h1 {
-    font-size: 120px; /* H1 Titles */
-    line-height: 140px;
+    font-size: 60px;
+    line-height: 70px;
     font-weight: bold;
 }
 
 .hero p {
-    font-size: 40px; /* P1 Paragraph Large */
-    line-height: 50px;
+    font-size: 25px;
+    line-height: 35px;
 }
 
 /* Content Sections */
@@ -101,23 +88,15 @@ header {
 .content-section h2 {
     color: var(--midnight-blue);
     margin-bottom: 20px;
-    font-size: 80px; /* H2 Titles */
-    line-height: 90px;
-    font-weight: bold;
-}
-
-.content-section h3 {
-    color: var(--spring-green);
-    margin-top: 30px;
-    font-size: 50px; /* H3 Titles */
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 50px;
     font-weight: bold;
 }
 
 .content-section p,
 .content-section ul {
-    font-size: 25px; /* P2 Paragraph Medium */
-    line-height: 35px;
+    font-size: 18px;
+    line-height: 28px;
     color: var(--secondary-text-color);
 }
 
@@ -136,39 +115,11 @@ footer {
     padding: 20px;
     background-color: var(--black);
     color: var(--white);
-    font-size: 18px; /* P3 Paragraph Small */
+    font-size: 18px;
     line-height: 22px;
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 1200px) {
-    .hero h1 {
-        font-size: 80px;
-        line-height: 90px;
-    }
-
-    .hero p {
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .content-section h2 {
-        font-size: 60px;
-        line-height: 70px;
-    }
-
-    .content-section h3 {
-        font-size: 40px;
-        line-height: 50px;
-    }
-
-    .content-section p,
-    .content-section ul {
-        font-size: 22px;
-        line-height: 32px;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -194,28 +145,30 @@ footer {
     }
 
     .hero h1 {
-        font-size: 60px;
-        line-height: 70px;
+        font-size: 40px;
+        line-height: 50px;
     }
 
     .hero p {
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 20px;
+        line-height: 30px;
     }
 
     .content-section h2 {
-        font-size: 50px;
-        line-height: 60px;
+        font-size: 30px;
+        line-height: 40px;
     }
 
-    .content-section h3 {
-        font-size: 35px;
-        line-height: 45px;
+    .content-section
+
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
     }
 
     .content-section p,
     .content-section ul {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 24px;
     }
 }
